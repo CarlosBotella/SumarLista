@@ -15,18 +15,16 @@ using namespace std;
 
 int sumarLista(int *p, int cuantos){
     int suma = 0;
-    for (int i = 0; i < cuantos; i++) {
-        cout << p[i] << endl;
+    for (int i = 0; i < cuantos; i++) { // Bucle para sumar los numeros
         suma = suma + p[i];
-        cout << "suma: " << suma << endl;
     }
     return suma;
 }
-
+//-------------------------------------------------
 int main(){
     int lista[100]= {3,4,7,9,10};
-    int resultado = sumarLista(&lista[0],5);
-    cout << resultado;
+    int resultado = sumarLista(&lista[0],5); // elijo sumar los 5 primeros numeros de la lista
+    cout << "suma: " << resultado << endl;
     
     
 }
